@@ -1,15 +1,17 @@
 <?php
-
+  //inisialisasi parameter GA
   $jumlah_gen=4;
   $jumlah_individu=6;
   $pc=0.9;
   $pm=0.1;
 
+  //fungsi minimasi dari persamaan 1+2b+3c+4d=30
   function f_obj($x){
     $minimasi = abs(($x[0]+2*$x[1]+3*$x[2]+4*$x[3])-30);
     return $minimasi;
   }
 
+  //fungsi untuk menghitung nilai fitness
   function hitung_fitness($individu){
         $fitness = 1/(1+f_obj($individu));
     return $fitness;
@@ -36,7 +38,7 @@
       $probabilitas[$i]=hitung_fitness($individu[$i])/$total_fitness;
     }
 
-    $r=rand(0,10)/10;
+    $r=rand(0,10)/10; //random nilai 0 - 1
     $i=0;
     $sum=$probabilitas[$i];
     while($sum<$r){
