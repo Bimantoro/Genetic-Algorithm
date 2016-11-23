@@ -1,6 +1,8 @@
 <?php
-  //Tugas KOMEV Danang Aji Bimantoro
-//  $persamaan="5a*2b/4c=10";//"1a+2b+3c+4d=30";
+  //KOMEV Danang Aji Bimantoro
+  //$persamaan="5a*2b/4c=10";//"1a+2b+3c+4d=30";
+  //this code only runable on terminal / command promt
+
 
   print("\n TUGAS KOMEV : DANANG AJI BIMANTORO | terminal version \n");
   print("===================================================== \n \n");
